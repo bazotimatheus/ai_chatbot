@@ -35,3 +35,22 @@ minhas_tools = [
             }
         }
 ]
+
+# código omitido
+
+def validar_codigo_promocional(argumentos):
+    codigo = argumentos.get("codigo")
+    validade = argumentos.get("validade")
+
+    return f"""
+        
+        # Formato de Resposta
+        
+        {codigo} com validade: {validade}. 
+        Ainda, diga se é válido ou não para o usuário.
+
+        """
+
+minhas_funcoes = {
+    "validar_codigo_promocional": validar_codigo_promocional,
+}
